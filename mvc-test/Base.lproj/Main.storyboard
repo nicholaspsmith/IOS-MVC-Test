@@ -36,18 +36,40 @@
                                     <constraint firstAttribute="width" constant="240" id="Qn1-XE-OPN"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVP-OL-21U">
+                                <rect key="frame" x="195" y="160" width="209" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="209" id="ky8-FP-2xd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdS-BH-jbB">
+                                <rect key="frame" x="271" y="499" width="56" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Rename"/>
+                                <connections>
+                                    <action selector="renamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRZ-SI-FAv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qDv-1P-A2T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7BC-9y-RiM"/>
+                            <constraint firstItem="VVP-OL-21U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GeO-vL-m46"/>
                             <constraint firstItem="I8u-VP-ZAx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="KMH-M6-apz"/>
                             <constraint firstItem="I8u-VP-ZAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fKL-cr-pSf"/>
+                            <constraint firstItem="pdS-BH-jbB" firstAttribute="top" secondItem="qDv-1P-A2T" secondAttribute="bottom" constant="56" id="hah-nR-fcG"/>
                             <constraint firstItem="qDv-1P-A2T" firstAttribute="top" secondItem="I8u-VP-ZAx" secondAttribute="bottom" constant="96" id="hzx-Qs-fLT"/>
+                            <constraint firstItem="VVP-OL-21U" firstAttribute="top" secondItem="I8u-VP-ZAx" secondAttribute="bottom" constant="41" id="kaQ-w8-ygW"/>
+                            <constraint firstItem="pdS-BH-jbB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nSH-1Y-dLL"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="fullName" destination="I8u-VP-ZAx" id="ebE-8N-7hE"/>
+                        <outlet property="renameField" destination="VVP-OL-21U" id="Q5L-ml-KVu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

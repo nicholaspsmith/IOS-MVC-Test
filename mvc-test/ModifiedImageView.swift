@@ -10,6 +10,6 @@ import UIKit
 
 class ModifiedImageView: UIImageView {
     override func awakeFromNib() {
-            self.layer.opacity = 0.3
+            self.layer.opacity = 0.9
     }
 }

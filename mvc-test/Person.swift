@@ -18,7 +18,12 @@ class Person {
     }
     
     var firstName: String {
-        return _firstName
+        get {
+            return _firstName
+        }
+        set {
+            _firstName = newValue
+        }
     }
     
     var lastName: String {
