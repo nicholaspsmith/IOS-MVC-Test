@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var fullName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let person = Person(first: "Bob", last: "Jones")
+        
+        fullName.text = person.fullName
+        
     }
 
     override func didReceiveMemoryWarning() {
