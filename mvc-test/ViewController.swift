@@ -21,11 +21,6 @@ class ViewController: UIViewController {
         fullName.text = person.fullName
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func renamePressed(sender: AnyObject) {
         if let txt = renameField.text {
             person.firstName = txt
